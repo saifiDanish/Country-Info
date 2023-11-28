@@ -1,0 +1,82 @@
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    font-family:Nunito,sans-serif;
+}
+
+.title{
+    font-weight: 800;
+}
+
+a{
+    text-decoration-line:none;
+    color: inherit;
+}
+
+
+.header-container{
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-items{
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline:24px;
+    justify-content: space-between;
+}
+
+.country-container{
+    margin-inline: auto;
+    max-width: 1280px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: space-between;
+}
+
+
+.card-text{
+    padding-inline: 24px;
+}
+
+main{
+    padding: 24px;
+}
+
+.country-card{
+    max-width: 260px;
+    display: inline-block;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;    
+}
+
+.country-card:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.country-card p{
+    margin-block: 6px;
+}
+
+.img-container{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* https://restcountries.com/v3.1/all */
