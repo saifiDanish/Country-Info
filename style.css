@@ -74,6 +74,19 @@ main{
 }
 
 
+@media(max-width 780px){
+    .country-container{
+        justify-content:center;
+    }
+    .title{
+        font-size:16px;
+    }
+    
+    .header-container p{
+        font-size:12px;
+        
+    }
+}
 
 
 

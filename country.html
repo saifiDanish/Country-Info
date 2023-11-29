@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="country.css">
     <script src="country.js" defer></script>
 </head>
 <body>
-    <h1>Country</h1>
+    <header class="header-container">
+        <div class="header-items">
+            <h2 class="title">Where in the World?</h2>
+            <p><i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark Mode</p>
+        </div>
+    </header>
+    <main>
+        <a class="back-button" href="#"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</a>
+        <div class="country-details">
+            <img src="" alt="flag"/>
+            <div class="details-text-container">
+                <h1></h1>
+                <div class="details-text">
+                    <p><b>Native Name:  </b><span class="native-name"></span></p>
+                    <p><b>Population:  </b><span class="population"></span></p>
+                    <p><b>Region:  </b><span class="region"></span></p>
+                    <p><b>Sub-Region:  </b><span class="sub-region"></span></p>
+                    <p><b>Capital:  </b><span class="capital"></span></p>
+                    <p><b>Top Level Domain:  </b><span class="top-level-domain">be</span></p>
+                    <p><b>Currencies:  </b><span class="currencies"></span></p>
+                    <p><b>Languages:  </b><span class="languages"></span></p>
+                </div>
+                <div class="boarder-countries">
+                    <p ><b>Boarder Countries:  </b><a  href="#">Dutch</a> <a href="#">England</a> <a href="#">Qatar</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
