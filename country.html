@@ -13,12 +13,14 @@
 <body>
     <header class="header-container">
         <div class="header-items">
-            <h2 class="title">Where in the World?</h2>
+            <h2 class="title"><a href="/">Where in the World?</a></h2>
             <p><i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark Mode</p>
         </div>
     </header>
     <main>
-        <a class="back-button" href="#"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</a>
+       
+      <div class="countries-details-container">
+        <span class="back-button" href="#" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</span>
         <div class="country-details">
             <img src="" alt="flag"/>
             <div class="details-text-container">
@@ -34,10 +36,11 @@
                     <p><b>Languages:  </b><span class="languages"></span></p>
                 </div>
                 <div class="boarder-countries">
-                    <p ><b>Boarder Countries:  </b><a  href="#">Dutch</a> <a href="#">England</a> <a href="#">Qatar</a></p>
+                    <b>Boarder Countries:  </b>
                 </div>
             </div>
         </div>
+      </div>
     </main>
 </body>
 </html>

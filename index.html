@@ -12,11 +12,25 @@
 <body>
     <header class="header-container">
         <div class="header-items">
-            <h2 class="title">Where in the World?</h2>
+            <h2 class="title"><a href="/">Where in the World?</a></h2>
             <p><i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark Mode</p>
         </div>
     </header>
     <main>
+        <div class="search-filter-container">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search country here"/>
+            </div>
+            <select class="filter-by-region">
+                <option hidden>Filter By Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Aisa">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
         <div class="country-container">
             <a href="#" class="country-card">
                 <img class="img-container" src="https://flagcdn.com/jo.svg" alt="card-img"/>
