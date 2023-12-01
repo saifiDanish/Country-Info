@@ -13,6 +13,9 @@ const languages = document.querySelector(".languages");
 const capital = document.querySelector(".capital");
 const boarderCountry = document.querySelector(".boarder-countries");
 
+const changeTheme = document.querySelector('.changeTheme');
+
+
 
 
 
@@ -45,3 +48,12 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
       })
     }
   })
+
+changeTheme.addEventListener('click',()=>{
+    const val = document.body.classList.toggle('dark')
+    if(val===false){        
+        changeTheme.innerHTML='<i class="fa-regular fa-moon"></i> Dark Mode';
+    }else{
+        changeTheme.innerHTML='<i class="fa-regular fa-sun"></i> Light Mode';
+    }
+})

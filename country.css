@@ -6,6 +6,17 @@
     cursor:pointer;
 }
 
+body{
+    --background-color:white;
+    --text-color:black;
+    --element-color:white;
+}
+
+body.dark{
+    --background-color:hsl(207, 26%, 17%);
+    --text-color:white;
+    --element-color:hsl(209, 23%, 22%);
+}
 .countries-details-container{
     max-width:1200px;
     margin-inline:auto;

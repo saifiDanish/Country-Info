@@ -2,6 +2,8 @@ const countryContainer = document.querySelector('.country-container');
 const filterByRegion = document.querySelector('.filter-by-region');
 const searchInput = document.querySelector('.search-container input');
 
+const changeTheme = document.querySelector('.changeTheme');
+
 
 let allCountriesData;
 
@@ -48,4 +50,13 @@ searchInput.addEventListener('input',(e)=>{
         return country.name.common.toLowerCase().includes(e.target.value.toLowerCase());
     })
     renderCountries(filterCountry);
+})
+
+changeTheme.addEventListener('click',()=>{
+    const val = document.body.classList.toggle('dark')
+    if(val===false){        
+        changeTheme.innerHTML='<i class="fa-regular fa-moon"></i> Dark Mode';
+    }else{
+        changeTheme.innerHTML='<i class="fa-regular fa-sun"></i> Light Mode';
+    }
 })
